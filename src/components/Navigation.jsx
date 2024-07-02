@@ -11,7 +11,7 @@ import { Photo6 } from './Photo6';
 const Navigation = () => {
     return (
 
-        <div className="container mt-4 father">
+        <div className="container mt-4 father center">
             <Link to="/photo1" className="links">
                 <figure className="image-size">
                     <Photo1 />
