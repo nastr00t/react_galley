@@ -15,7 +15,7 @@ function App() {
     <>
       <BrowserRouter>
         <div>
-          <h1 id="title" className='text-center my-3 pb-5' >Proyecto Galeria</h1>
+          <h1 id="title" className='text-center my-3 pb-5' >Proyecto Galería</h1>
         </div>
         <Routes>
           <Route path='/photo1' element={<Photo1 className='image-size' />} />
