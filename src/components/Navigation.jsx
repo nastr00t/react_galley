@@ -18,7 +18,7 @@ const Navigation = () => {
                     <figcaption>Foto 1</figcaption>
                 </figure>
             </Link>
-            <Link to="/photo3" className="links">
+            <Link to="/photo2" className="links">
                 <figure className="image-size">
                     <Photo2 />
                     <figcaption>Foto2</figcaption>

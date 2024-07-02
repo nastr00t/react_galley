@@ -6,6 +6,7 @@ import { Photo3 } from './components/Photo3'
 import { Photo4 } from './components/Photo4'
 import { Photo5 } from './components/Photo5'
 import { Photo6 } from './components/Photo6' 
+import Navigation from './components/Navigation';
 
 function App() {
 
@@ -13,14 +14,18 @@ function App() {
   return (
     <>
       <BrowserRouter>
+        <div>
+          <h1 id="title" className='text-center my-3' >Proyecto Galeria</h1>
+        </div>
         <Routes>
-          <Route path='/photo1' element={<Photo1 />} />
-          <Route path='/photo2' element={<Photo2 />}  />
-          <Route path='/photo3' element={<Photo3 />} />
-          <Route path='/photo4' element={<Photo4 />} />
-          <Route path='/photo5' element={<Photo5 />} />
-          <Route path='/photo6' element={<Photo6 />} />
+          <Route path='/photo1' element={<Photo1 className='image-size' />} />
+          <Route path='/photo2' element={<Photo2 className='image-size'/>}  />
+          <Route path='/photo3' element={<Photo3 className='image-size'/>} />
+          <Route path='/photo4' element={<Photo4 className='image-size'/>} />
+          <Route path='/photo5' element={<Photo5 className='image-size'/>} />
+          <Route path='/photo6' element={<Photo6 className='image-size'/>} />
         </Routes>
+        <Navigation />
       </BrowserRouter>
 
     </>
